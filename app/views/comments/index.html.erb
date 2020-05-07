@@ -1,13 +1,14 @@
-<h1>ログイン</h1>
+<h1>Log in</h1>
 
 <% if user_signed_in? %> <!-- ユーザーがログインしているか調べる -->
   <!-- ユーザーがログインしていた時の処理 -->
-  <h2> 現在 <%= current_user.name %> さんがログインしています </h2> <!-- ここを追加します -->
-  <h4> メールアドレス： <%= current_user.email %> </h4>
-  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %> <!-- ログアウトをする -->
+  <h2> Now, <%= current_user.name %> Loged in </h2>
+  <h4> Email： <%= current_user.email %> </h4>
+  <%= link_to 'Posts all', microposts_path %>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete %> <!-- ログアウトをする -->
 <% else %>
   <!-- ユーザーがログインしていなかった時の処理 -->
-  <h2> 現在ログインしていません </h2>
-  <%= link_to "ログイン", new_user_session_path, class: 'post' %> <!-- ログイン画面に移行する -->
-  <%= link_to "新規登録", new_user_registration_path, class: 'post' %> <!-- 新規登録画面に移行する -->
+  <h2> Not currently logged in </h2>
+  <%= link_to "Log in", new_user_session_path, class: 'post' %> <!-- ログイン画面に移行する -->
+  <%= link_to "Sign up", new_user_registration_path, class: 'post' %> <!-- 新規登録画面に移行する -->
 <% end %>
