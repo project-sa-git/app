@@ -1,24 +1,50 @@
-# README
+# post-app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ユーザ登録してログインし、文書投稿するアプリになります。
 
-Things you may want to cover:
+<img width="372" alt="スクリーンショット 2020-05-07 11 50 09" src="https://user-images.githubusercontent.com/50135286/81298633-fe661180-90af-11ea-93b5-3be216c94a67.png">
 
-* Ruby version
+# 機能
 
-* System dependencies
+・ログイン機能 (email + pass: Devise)
 
-* Configuration
+・閲覧・投稿機能(Microposts)
 
-* Database creation
+・投稿した文章の編集・削除
 
-* Database initialization
+# 環境
 
-* How to run the test suite
+・Ruby 2.6.3
 
-* Services (job queues, cache servers, search engines, etc.)
+・Rails 6.0.2.2
 
-* Deployment instructions
+・DB PostgreSQL
 
-* ...
+# インストール
+
+$ git clone https://github.com/project-sa-git/post-app.git
+
+$ cd post-app
+
+$ bundle install
+
+# デモ
+
+「 Heroku 」を本番環境にデプロイしたものになります。
+
+https://immense-earth-54603.herokuapp.com/
+
+※ サンプルとしてゲストユーザー (サンプルデータ閲覧用)あり
+
+＜ ゲストログイン情報 ＞
+
+E メール ： 「 hoge@hoge.com 」
+
+パスワード ： 「 hogehoge 」
+
+https://immense-earth-54603.herokuapp.com/
+
+
+# ライセンス
+
+ご自由にご利用ください
