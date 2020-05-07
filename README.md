@@ -22,11 +22,13 @@
 
 # インストール
 
+```
 $ git clone https://github.com/project-sa-git/post-app.git
 
 $ cd post-app
 
 $ bundle install
+```
 
 # デモ
 
